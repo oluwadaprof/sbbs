@@ -28,8 +28,9 @@ export const SectionThree = () => {
       <Grid
         columns={{ base: 2, lgDown: 3, smDown: 2 }}
         flexWrap="wrap"
-        ml={{ lgDown: "1rem" }}
-        gap={{ base: "1.2rem", lgDown: ".7rem" }}
+        ml={{ lgDown: "1rem",smDown:0 }}
+        columnGap={{smDown: '1rem'}}
+        gap={{ base: "1.2rem", lgDown: ".7rem", smDown:'1rem' }}
         flexDir={{ lgDown: "column" }}
         w={{ base: "50%", lgDown: "100%" }}
         // transform="skew(0deg,05deg)"
@@ -40,7 +41,7 @@ export const SectionThree = () => {
         {SERVICE_DATA.map(({ id, header, content, icon }) => (
           <Flex
             key={id}
-            gap=".8rem"
+            gap={{base:".8rem"}}
             w={{ base: "20rem", lgDown: "12rem", smDown: "10rem" }}
           >
             {icon}
@@ -67,8 +68,8 @@ export const SectionThree = () => {
           objectFit="contain"
           alt="lady"
           className={css({
-            h: { base: "500", lgDown: "400", smDown: "280" },
-            w: { base: "760", lgDown: "550" },
+            h: { base: "500", lgDown: "400", smDown: "220" },
+            w: { base: "760", lgDown: "550", smDown: '350'},
           })}
         />
       </Box>
