@@ -16,13 +16,13 @@ export const SectionOne = () => {
       px={{ base: "6rem", lgDown: "3rem" }}
       py="2rem"
       flexWrap={{ lgDown: "wrap" }}
-      maxW="breakpoint-xl"
       mx="auto"
     >
       <VStack
         alignItems={{ base: "flex-start", lgDown: "center" }}
         gap="1rem"
         w={{base:"50%", lgDown:'100%'}}
+        maxW="breakpoint-xl"
       >
         <Text
           textAlign={{ base: "left", lgDown: "center" }}

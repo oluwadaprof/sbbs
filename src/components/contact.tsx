@@ -36,7 +36,7 @@ export const Contact = () => {
       <Flex flexDir="column" align="flex-end" gap="2">
         <Flex
           textAlign="right"
-          align="center"
+          align="flex-end"
           gap={{ base: "1rem", lgDown: "0" }}
           flexWrap="wrap"
           justify="center"

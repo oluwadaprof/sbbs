@@ -21,7 +21,7 @@ export const SectionThree = () => {
       flexWrap={{ lgDown: "wrap" }}
       pos="relative"
       overflowY="visible"
-      transform="skew(0deg,-05deg)"
+      // transform="skew(0deg,-05deg)"
       gap="2rem"
       mx="auto"
     >
@@ -32,7 +32,7 @@ export const SectionThree = () => {
         gap={{ base: "1.2rem", lgDown: ".7rem" }}
         flexDir={{ lgDown: "column" }}
         w={{ base: "50%", lgDown: "100%" }}
-        transform="skew(0deg,05deg)"
+        // transform="skew(0deg,05deg)"
         mt={{ lgDown: "2rem", smDown: "2rem" }}
         justifyContent="center"
         maxW="breakpoint-xl"
@@ -61,7 +61,7 @@ export const SectionThree = () => {
         ))}
       </Grid>
 
-      <Box transform="skew(0deg,05deg)">
+      <Box>
         <Image
           src={sixthImage}
           objectFit="contain"
