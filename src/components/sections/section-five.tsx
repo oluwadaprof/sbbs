@@ -29,7 +29,7 @@ export const SectionFive = () => {
       <Text>OUR WORK</Text>
       <Text fontSize={{ base: "3rem", lgDown: "1.6rem" }}>FEATURED WORK</Text>
       <Grid
-        columns={{ base: 7, lgDown: 4, smDown: 3, "@/xs": 2 }}
+        columns={{ base: 7, lgDown: 6, smDown: 3, "@/xs": 2 }}
         alignItems="center"
         justifyContent="center"
         rowGap="1"
@@ -47,7 +47,6 @@ export const SectionFive = () => {
           >
             <Image
               className={css({
-                // w: 'auto',
                 _hover: {
                   transform: "scale(1.1)",
                   transition: "ease-in-out .3s",

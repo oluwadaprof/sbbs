@@ -32,7 +32,7 @@ export default function Home() {
         <HeroSection />
         <SectionOne />
         <SectionTwo />
-        {/* <SectionThree /> */}
+        <SectionThree />
         <SectionFour />
         <SectionFive />
         <Contact />

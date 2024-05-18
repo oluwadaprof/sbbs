@@ -26,7 +26,7 @@ export const SectionFour = () => {
         <Text fontSize={{base:"3rem", lgDown: '1.6rem'}}>WE DESIGN YOUR SPACE</Text>
         <Text mb="1.5rem">-----SINCE 20GHENGHEN-------</Text>
       </Box>
-      <Grid columns={{ base: 3, lgDown: 2, smDown: 2, }}>
+      <Grid columns={{ base: 3, lgDown: 3, smDown: 2, }}>
       {WORKS_DATA.map((work) => (
           <Box
             key={work.id}

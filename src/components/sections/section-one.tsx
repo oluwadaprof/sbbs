@@ -17,6 +17,7 @@ export const SectionOne = () => {
       py="2rem"
       flexWrap={{ lgDown: "wrap" }}
       maxW="breakpoint-xl"
+      mx="auto"
     >
       <VStack
         alignItems={{ base: "flex-start", lgDown: "center" }}
