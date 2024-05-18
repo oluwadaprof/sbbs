@@ -34,18 +34,20 @@ export const SectionFive = () => {
         justifyContent="center"
         rowGap="1"
         columnGap="1"
+        maxW="breakpoint-xl"
       >
         {IMAGES.map(({ id, picture, name }) => (
           <Box
             overflow="hidden"
             position="relative"
             rounded="sm"
-            h={{ base: 150, lgDown: 150 }}
-            w={{ base: 150, lgDown: 100 }}
+            h={{ base: 120, lgDown: 100 }}
+            w={{ base: 120, lgDown: 100 }}
             key={id}
           >
             <Image
               className={css({
+                // w: 'auto',
                 _hover: {
                   transform: "scale(1.1)",
                   transition: "ease-in-out .3s",
@@ -54,6 +56,7 @@ export const SectionFive = () => {
               src={picture}
               alt={name}
               layout="fill"
+              objectFit="cover"
             />
           </Box>
         ))}

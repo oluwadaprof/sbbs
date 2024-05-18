@@ -6,41 +6,56 @@ import { css } from "../../../styled-system/css";
 
 export const HeroSection = () => {
   return (
-    <Flex bg="red.100"  scrollSnapAlign="start" h="90vh" w="full" pos="relative">
-      <Box w="full" display="flex" alignItems="center">
-        <VStack w="full">
-          <Text
-            w={{ base: "full", md: "25rem" }}
-            fontSize={{ base: "1.2rem", lgDown: "1rem", smDown: "1rem" }}
-            textAlign="center"
-            fontWeight="bold"
-            p="1"
-            mx="auto"
-            my="auto"
-            zIndex="1"
+    <Flex h="90vh" w="full" pos="relative" gap="0">
+      <Box maxW="breakpoint-xl" w="full" display="flex" alignItems="center" justifyContent="left" gap="0">
+        <VStack w="auto" alignItems="left" gap="0">
+          <span
+            className={css({
+              fontSize: {
+                base: "2.3rem",
+                lgDown: "1.5rem",
+                smDown: "1.2rem",
+              },
+              fontStyle: "normal",
+              fontWeight: 'bold',
+              w: '85%',
+              color: "black",
+              bg: "white",
+              px: "1rem",
+              py: '.6rem',
+              zIndex: "1",
+            })}
           >
-            <span
-              className={css({
-                fontSize: "4rem",
-              })}
-            >
-              ELEVATE
-            </span>
-            <br /> your space with <br />{" "}
-            <span
-              className={css({
-                fontSize: "2rem",
-              })}
-            >
-             TIMELESS ELEGANCE
-            </span>
-          </Text>
+            ELEVATE YOUR SPACE
+          </span>
+          <span
+            className={css({
+              fontSize: {
+                base: "2.3rem",
+                lgDown: "1.5rem",
+                smDown: "1.2rem",
+              },
+              fontWeight: 'bold',
+              fontStyle: "normal",
+              w: 'auto',
+              color: "black",
+              bg: "white",
+              px: "1rem",
+              py: '.6rem',
+              zIndex: "1",
+            
+            })}
+          >
+            WITH TIMELESS ELEGANCE
+          </span>
+
           <Text
             w={{ base: "100%", md: "25rem" }}
             fontSize={{ base: "1rem", md: "1rem" }}
             zIndex="1"
-            textAlign="center"
-            bg="yellow.700"
+            textAlign="left"
+            // bg="rgba(0, 0, 0, 0.7)"
+            bg="rgba(214, 158, 46, .7)"
             p="1rem"
             color="white"
           >
@@ -57,3 +72,18 @@ export const HeroSection = () => {
 };
 
 // height={950} width={1390}
+{
+  /* <Text
+// w={{ base: "full", md: "25rem" }}
+
+w={{ base: "100%", md: "35rem" }}
+fontSize={{ base: "1.2rem" }}
+textAlign="left"
+fontWeight="bold"
+p="1"
+my="auto"
+zIndex="1"
+color="white"
+fontStyle="italic"
+> */
+}

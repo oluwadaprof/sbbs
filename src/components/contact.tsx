@@ -7,7 +7,7 @@ import { SlEnvolope } from "react-icons/sl";
 
 export const Contact = () => {
   return (
-    <VStack>
+    <VStack maxW="breakpoint-xl">
       <Text>CONTACT</Text>
       <Text fontStyle="italic" fontSize="1.7rem">
         Whats{" "}
@@ -40,14 +40,16 @@ export const Contact = () => {
           gap={{ base: "1rem", lgDown: "0" }}
           flexWrap="wrap"
           justify="center"
+         
         >
-          <Text fontSize={{ base: "1.2rem", mdDown: "1rem", smDown: "1rem" }}>
+          <Text   fontSize={{ base: "1.2rem", mdDown: "1rem", smDown: "1rem" }}>
             Every great design begins with a conversation
           </Text>
           <Button
             alignSelf={{ lgDown: "center" }}
             size="md"
             mt="1rem"
+            mr={{base:"3.8rem", lgDown: '3.5rem', smDown: '0'}}
             look="success"
             className={css({
               transform: { lgDown: "scale(.8,.8)" },
