@@ -8,6 +8,7 @@ import { RxCaretRight } from "react-icons/rx";
 export const SectionOne = () => {
   return (
     <Flex
+    id="articles"
       h="100vh"
       scrollSnapAlign="start"
       gap="5%"

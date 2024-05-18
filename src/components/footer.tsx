@@ -12,7 +12,7 @@ import { FaFigma } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <Box bg="black" w="full" mt="2rem" pb="5rem">
+    <Box bg="black" w="full" mt="2rem" pb="5rem" >
       <Flex
         color="white"
         justify={{ base: "space-around", lgDown: "flex-start" }}
@@ -20,6 +20,7 @@ export const Footer = () => {
         p="2rem"
         flexWrap="wrap"
         maxW="breakpoint-xl"
+        w="full"
       >
         <VStack alignItems="flex-start">
           <Text textAlign="left">Follow us</Text>

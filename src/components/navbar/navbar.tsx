@@ -43,7 +43,7 @@ export const NavBar = ({ showMobileNav, setShowMobileNav }: Props) => {
           gap="3rem"
           mr="3rem"
         >
-          {LINK_DATA.map(({ id, label }) => (
+          {LINK_DATA.map(({ id, label, href }) => (
             <Link
               key={id}
               className={css({
@@ -58,7 +58,7 @@ export const NavBar = ({ showMobileNav, setShowMobileNav }: Props) => {
                   transition: "ease-in .2s",
                 },
               })}
-              href="/"
+              href={href}
             >
               {label}
             </Link>
@@ -86,25 +86,30 @@ export const NavBar = ({ showMobileNav, setShowMobileNav }: Props) => {
   );
 };
 
-const LINK_DATA = [
+export const LINK_DATA = [
   {
     id: 1,
     label: "Home",
+    href: "#hero",
   },
   {
     id: 2,
     label: "Services",
+    href: "#services",
   },
   {
     id: 3,
     label: "Our Work",
+    href: "#our-work",
   },
   {
     id: 4,
     label: "Articles",
+    href: "#articles",
   },
   {
     id: 5,
     label: "Contact",
+    href: "#contact",
   },
 ];

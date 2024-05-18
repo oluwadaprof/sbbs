@@ -6,9 +6,9 @@ import { css } from "../../../styled-system/css";
 
 export const HeroSection = () => {
   return (
-    <Flex h="90vh" w="full" pos="relative" gap="0">
-      <Box maxW="breakpoint-xl" w="full" display="flex" alignItems="center" justifyContent="left" gap="0">
-        <VStack w="auto" alignItems="left" gap="0">
+    <Flex id="hero" h="90vh"  pos="relative" >
+      <Box  display="flex" alignItems="center" >
+        <VStack maxW="breakpoint-xl" alignItems="flex-start" justifyContent="flex-start" gap="0">
           <span
             className={css({
               fontSize: {
@@ -30,6 +30,7 @@ export const HeroSection = () => {
           </span>
           <span
             className={css({
+              // mr:'auto',
               fontSize: {
                 base: "2.3rem",
                 lgDown: "1.5rem",

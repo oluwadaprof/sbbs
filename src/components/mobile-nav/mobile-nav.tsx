@@ -3,6 +3,7 @@ import { Box, Divider, Flex, VStack } from "../../../styled-system/jsx";
 import { css } from "../../../styled-system/css";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect, useState } from "react";
+import { LINK_DATA } from "../navbar/navbar";
 
 type Props = {
   setShowMobileNav: (value: boolean) => void;
@@ -57,8 +58,8 @@ export const MobileNav = ({ setShowMobileNav }: Props) => {
             }}
             className={css({
               _hover: {
-                cursor: 'pointer'
-              }
+                cursor: "pointer",
+              },
             })}
             size={30}
           />
@@ -68,7 +69,7 @@ export const MobileNav = ({ setShowMobileNav }: Props) => {
       <Divider color="yellow.700" />
 
       <VStack>
-        {LINK_DATA.map(({ id, label }) => (
+        {LINK_DATA.map(({ id, label, href }) => (
           <Link
             key={id}
             className={css({
@@ -83,7 +84,8 @@ export const MobileNav = ({ setShowMobileNav }: Props) => {
                 transition: "ease-in .2s",
               },
             })}
-            href="/"
+            href={href}
+            onClick={() => setShowMobileNav(false)}
           >
             {label}
           </Link>
@@ -92,26 +94,3 @@ export const MobileNav = ({ setShowMobileNav }: Props) => {
     </Box>
   );
 };
-
-const LINK_DATA = [
-  {
-    id: 1,
-    label: "Home",
-  },
-  {
-    id: 2,
-    label: "Services",
-  },
-  {
-    id: 3,
-    label: "Our Work",
-  },
-  {
-    id: 4,
-    label: "Articles",
-  },
-  {
-    id: 5,
-    label: "Contact",
-  },
-];

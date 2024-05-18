@@ -7,7 +7,7 @@ import { SlEnvolope } from "react-icons/sl";
 
 export const Contact = () => {
   return (
-    <VStack mx="auto" maxW="breakpoint-xl">
+    <VStack id="contact" mx="auto" maxW="breakpoint-xl">
       <Text>CONTACT</Text>
       <Text fontStyle="italic" fontSize="1.7rem">
         Whats{" "}
