@@ -16,7 +16,7 @@ type Props = {
 
 export const NavBar = ({ showMobileNav, setShowMobileNav }: Props) => {
   return (
-    <Flex color="white" bg="black" >
+    <Flex id="home" color="white" bg="black" zIndex="2">
       <Flex
         justify="space-between"
         h="auto"
@@ -90,7 +90,7 @@ export const LINK_DATA = [
   {
     id: 1,
     label: "Home",
-    href: "#hero",
+    href: "#home",
   },
   {
     id: 2,

@@ -8,7 +8,7 @@ import { RxCaretRight } from "react-icons/rx";
 export const SectionOne = () => {
   return (
     <Flex
-    id="articles"
+      id="articles"
       h="100vh"
       scrollSnapAlign="start"
       gap="5%"
@@ -22,13 +22,13 @@ export const SectionOne = () => {
       <VStack
         alignItems={{ base: "flex-start", lgDown: "center" }}
         gap="1rem"
-        w={{base:"50%", lgDown:'100%'}}
+        w={{ base: "50%", lgDown: "100%" }}
         maxW="breakpoint-xl"
       >
         <Text
           textAlign={{ base: "left", lgDown: "center" }}
           fontStyle="italics"
-          fontSize={{base:"2rem", lgDown: '1.4rem'}}
+          fontSize={{ base: "2rem", lgDown: "1.4rem" }}
         >
           EMBRACE THE ART OF REDEFINED LIVING
         </Text>

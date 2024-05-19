@@ -13,7 +13,7 @@ import { GoDeviceCameraVideo } from "react-icons/go";
 export const SectionThree = () => {
   return (
     <HStack
-    id="services"
+      id="services"
       h={{ base: "60vh", smDown: "70vh" }}
       bg="black"
       mt={{ base: "10rem", lgDown: "10rem" }}
@@ -28,9 +28,9 @@ export const SectionThree = () => {
       <Grid
         columns={{ base: 2, lgDown: 3, smDown: 2 }}
         flexWrap="wrap"
-        ml={{ lgDown: "1rem",smDown:0 }}
-        columnGap={{smDown: '1rem'}}
-        gap={{ base: "1.2rem", lgDown: ".7rem", smDown:'1rem' }}
+        ml={{ lgDown: "1rem", smDown: 0 }}
+        columnGap={{ smDown: "1rem" }}
+        gap={{ base: "1.2rem", lgDown: ".7rem", smDown: "1rem" }}
         flexDir={{ lgDown: "column" }}
         w={{ base: "50%", lgDown: "100%" }}
         mt={{ lgDown: "2rem", smDown: "2rem" }}
@@ -40,7 +40,7 @@ export const SectionThree = () => {
         {SERVICE_DATA.map(({ id, header, content, icon }) => (
           <Flex
             key={id}
-            gap={{base:".8rem"}}
+            gap={{ base: ".8rem" }}
             w={{ base: "20rem", lgDown: "12rem", smDown: "10rem" }}
           >
             {icon}
@@ -68,7 +68,7 @@ export const SectionThree = () => {
           alt="lady"
           className={css({
             h: { base: "500", lgDown: "400", smDown: "220" },
-            w: { base: "760", lgDown: "550", smDown: '350'},
+            w: { base: "760", lgDown: "550", smDown: "350" },
           })}
         />
       </Box>

@@ -6,9 +6,9 @@ import { css } from "../../../styled-system/css";
 
 export const HeroSection = () => {
   return (
-    <Flex id="hero" h="90vh"  pos="relative" >
+    <Flex  h="90vh"  pos="relative" >
       <Box  display="flex" alignItems="center" >
-        <VStack maxW="breakpoint-xl" alignItems="flex-start" justifyContent="flex-start" gap="0">
+        <VStack  pos="absolute" left={{base: "0",lgDown: "0", xl: '121'}} alignItems="flex-start" justifyContent="flex-start" gap="0">
           <span
             className={css({
               fontSize: {
